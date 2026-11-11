@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Capivaras - Acesso à Saúde</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Leaflet Routing Machine CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>🐾 Projeto Capivaras</h1>
+    <div class="legend-preview">
+      <span>Alagamento: </span>
+      <span class="badge blue">Leve</span>
+      <span class="badge yellow">Moderado</span>
+      <span class="badge red">Grave</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Mapa interativo -->
+    <div id="map"></div>
+
+    <!-- Painel de Detalhes da Unidade -->
+    <aside id="sidebar" class="sidebar">
+      <button id="close-btn" class="close-btn">&times;</button>
+      
+      <div id="sidebar-content">
+        <h2>Selecione uma unidade no mapa</h2>
+        <p class="placeholder-text">Clique sobre qualquer ícone de unidade de saúde para ver condições de acesso, avaliações e traçar rotas.</p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Leaflet Routing Machine JS -->
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

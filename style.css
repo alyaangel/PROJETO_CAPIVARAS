@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #1b4931;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.legend-preview .badge {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.badge.blue { background-color: rgba(30, 144, 255, 0.6); color: #fff; }
+.badge.yellow { background-color: rgba(255, 215, 0, 0.7); color: #000; }
+.badge.red { background-color: rgba(220, 20, 60, 0.6); color: #fff; }
+
+.container {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+#map {
+  flex: 1;
+  height: 100%;
+}
+
+/* Painel Lateral */
+.sidebar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 360px;
+  max-height: calc(100% - 30px);
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1001;
+  transition: transform 0.3s ease;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  float: right;
+  cursor: pointer;
+  color: #666;
+}
+
+.unit-tag {
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin: 12px 0 6px 0;
+  text-transform: uppercase;
+}
+
+/* Barras de Avaliação */
+.progress-bar-container {
+  background: #e5e7eb;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  background: #10b981;
+  height: 100%;
+}
+
+.route-btn {
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.route-btn:hover {
+  background-color: #1d4ed8;
+}
